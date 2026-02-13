@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.parent { 
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr); 
+    grid-template-rows: repeat(5, 1fr); 
+    grid-column-gap: 0px; 
+    grid-row-gap: 0px;
+    height: 100vh;
+    background: radial-gradient(ellipse at center, #d4d4d4 0%, #8a8a8a 50%, #505050 100%);
+    padding: 20px;
+    gap: 15px;
+}
+
+/* Header - Venta de PCs */
+.div1 { 
+    grid-area: 1 / 1 / 2 / 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div1 h1 {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 20px 60px;
+    border-radius: 15px;
+    font-size: 2.5em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Foto y Precio */
+.div2 { 
+    grid-area: 2 / 1 / 5 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+/* Especificaciones */
+.div3 { 
+    grid-area: 2 / 4 / 5 / 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+/* Redes Sociales */
+.div4 { 
+    grid-area: 5 / 4 / 6 / 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+/* Teléfono */
+.div5 { 
+    grid-area: 5 / 1 / 6 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+/* Cards generales */
+.card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    width: 15%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Imagen placeholder */
+.image-placeholder {
+    width: 100%;
+    height: 70%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.image-placeholder p {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+/* Precio */
+.price {
+    width: 70%;
+    background: #2ecc71;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.price h2 {
+    color: white;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+/* Textarea especificaciones */
+textarea {
+    width: 100%;
+    height: 80%;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    resize: none;
+    background: rgba(255, 255, 255, 0.9);
+    transition: border 0.3s;
+}
+
+textarea:focus {
+    outline: none;
+    border: 2px solid #667eea;
+}
+
+/* Redes sociales */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.social-links a {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 500;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* Teléfono */
+.phone-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.phone-card h3 {
+    color: white;
+    font-size: 1.5em;
+}
+
+.phone-number {
+    color: white;
+    font-size: 2.5em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
