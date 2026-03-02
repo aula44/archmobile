@@ -1,57 +1,40 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Venta de psoes</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luminate - Make your phone more beautiful">
+    <title>Luminate</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-    <div class="parent">  <!-- Grid principal -->
-        
-        <div class="div1">  <!-- Título -->
-            <h1>VENTA DE PSOE</h1>
+    <header>
+        <div class="logo">
+            <img src="assets/luminate.png" alt="logo">
         </div>
-        
-        <div class="div2">  <!-- Imagen y precio -->
-            <div class="card">
-                <img src="img/pc.jpg" alt="PC Gaming">
-                <div class="price">
-                    <h2>3000€</h2>
-                </div>
-            </div>
+        <nav class="nav-desktop">
+            <!-- navbar -->
+            <ul>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">ArchmobileOS</a></li>
+                <li><a href="#">Garantía</a></li>
+            </ul>
+        </nav>
+        <div class="download-button nav-desktop">
+            <a href="#"><i class="fa-solid fa-circle-user fa-fw"></i> Inicia Sesión</a>
         </div>
-        
-        <div class="div3">  <!-- Especificaciones -->
-            <div class="card">
-                <h3>Especificaciones</h3>
-                <textarea placeholder="Escribe aquí las características del PC..."></textarea>
-            </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Nuestra misión es tu</h2>
+            <h1 class="beautiful-text">privacidad.</h1>
+            <a href="#" class="learn-more"><i class="fa-solid fa-magnifying-glass fa-fw"></i> Explora nuestros modelos</a>
         </div>
-        
-        <div class="div4">  <!-- Redes sociales -->
-            <div class="card">
-                <h3>Contáctanos</h3>
-                <div class="social-links">
-                    <a href="#">📘 Facebook</a>
-                    <a href="#">📷 Instagram</a>
-                    <a href="#">🐦 Twitter</a>
-                    <a href="#">💼 LinkedIn</a>
-                </div>
-            </div>
+        <div class="hero-image">
+            <img src="assets/banner.png" alt="captura introductoria">
         </div>
-        
-        <div class="div5">  <!-- Teléfono -->
-            <div class="card phone-card">
-                <h3>📞 Teléfono</h3>
-                <p class="phone-number">+34 912 345 678</p>
-            </div>
-        </div>
-        
-    </div>
+    </section>
 </body>
 </html>
-
-
