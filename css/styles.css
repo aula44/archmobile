@@ -19,7 +19,7 @@ header {
 }
 
 .logo img {
-    max-height: 30px;
+    max-height: 45px;
 }
 
 nav ul {
@@ -41,8 +41,8 @@ nav ul {
         }
 
 .download-button a {
-    background-color: #d77aff;
-    color: #000000;
+    background-color: #4e4da1;
+    color: #ffffff;
     padding: 10px 20px;
     border-radius: 10px;
     text-decoration: none;
@@ -54,7 +54,7 @@ nav ul {
     justify-content: space-between;
     align-items: center;
     padding: 40px 80px;
-    background: linear-gradient(180deg, #DDDDDD, #F5D6FE);
+    background: linear-gradient(180deg, #DDDDDD, #a2b8f4);
     border-radius: 35px;
     margin: 20px 40px;
     flex-wrap: nowrap;
@@ -97,8 +97,8 @@ nav ul {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #d77aff;
-    color: #000000;
+    background-color: #4e4da1;
+    color: #ffffff;
     border-radius: 10px;
     text-decoration: none;
     font-weight: bold;
