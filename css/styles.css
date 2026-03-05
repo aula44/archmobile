@@ -113,6 +113,8 @@ nav ul {
 
 .div1 { 
     grid-column: 1 / -1;
+    margin-top: -30px;
+    margin-bottom: -50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,6 +132,7 @@ nav ul {
 }
 
 .div2 { 
+    margin-top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
