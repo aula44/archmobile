@@ -93,6 +93,36 @@ nav ul {
     font-weight: 900;
 }
 
+.info_marquesina {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px;
+    margin: 20px 40px;
+    flex-wrap: nowrap;
+}
+
+.info_marquesina_textos {
+    flex: 1;
+    text-align: center;
+    min-width: 300px;
+}
+
+.info_marquesina_textos h2 {
+    font-size: 35px;
+    color: #000;
+    margin: 0;
+    font-weight: normal;
+}
+
+.info_marquesina_textos h1 {
+    font-size: 100px;
+    color: #000;
+    margin: 0;
+    margin-top: -20px;
+    font-weight: 900;
+}
+
 .tabla {
     display: flex;
     justify-content: space-between;
@@ -167,4 +197,25 @@ nav ul {
     border-radius: 10px;
     text-decoration: none;
     font-weight: bold;
+}
+
+.contenedor_historia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    margin: 20px 40px;
+    flex-wrap: nowrap;
+}
+
+.contenedor_historia_textos {
+    flex: 1;
+    min-width: 0;
+}
+
+.contenedor_historia p {
+    font-size: 27px;
+    color: #000;
+    margin: 0;
+    font-weight: normal;
 }
