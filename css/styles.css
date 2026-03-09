@@ -49,6 +49,16 @@ nav ul {
     font-weight: bold;
 }
 
+.price h3 {
+    margin-top: -10px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.price h2 {
+    text-align: center;
+}
+
 .marquesina {
     display: flex;
     justify-content: space-between;
@@ -90,7 +100,7 @@ nav ul {
     color: #000;
     margin: 0;
     margin-top: -20px;
-    font-weight: 900;
+    font-weight: 800;
 }
 
 .info_marquesina {
@@ -130,6 +140,7 @@ nav ul {
     padding: 40px 80px;
     margin: 20px 40px;
     flex-wrap: nowrap;
+    margin-bottom: 90px;
 }
 
 .parent { 
@@ -151,13 +162,10 @@ nav ul {
 }
 
 .div1 h1 {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 20px 60px;
-    border-radius: 15px;
-    font-size: 40px;
-    font-weight: 700;
-    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-weight: 800;
+    margin-top: 35px;
     margin-bottom: 40px;
 }
 
@@ -182,7 +190,7 @@ nav ul {
 }
 
 .tarjetas_modelos img {
-    width: 70%;
+    width: 80%;
     height: 60%;
     object-fit: cover;
     margin-bottom: 14px;
@@ -214,8 +222,88 @@ nav ul {
 }
 
 .contenedor_historia p {
-    font-size: 27px;
+    font-size: 24px;
     color: #000;
     margin: 0;
     font-weight: normal;
+}
+
+.tiendas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 250px;
+    margin: 20px 40px;
+    flex-wrap: nowrap;
+}
+
+.tiendas_textos {
+    flex: 1;
+    min-width: 300px;
+}
+
+.tiendas_iframe {
+    flex: 0 0 50%;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tiendas_textos h2 {
+    font-size: 35px;
+    color: #000;
+    margin: 0;
+    font-weight: normal;
+}
+
+.tiendas_textos h1 {
+    font-size: 70px;
+    color: #000;
+    margin: 0;
+    margin-top: -20px;
+    font-weight: 700;
+}
+
+.comparacion_android {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px;
+    background: linear-gradient(180deg, #DDDDDD, #a2b8f4);
+    border-radius: 35px;
+    margin: 20px 40px;
+    flex-wrap: nowrap;
+}
+
+.comparacion_android_textos {
+    flex: 1;
+    min-width: 300px;
+}
+
+.comparacion_android_img {
+    flex: 0 0 50%;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
+
+    .comparacion_android_img img {
+        max-width: 85%;
+        height: auto;
+        object-fit: contain;
+    }
+
+.comparacion_android_textos h2 {
+    font-size: 35px;
+    color: #000;
+    margin: 0;
+    font-weight: normal;
+}
+
+.marquesina_textos h1 {
+    font-size: 100px;
+    color: #000;
+    margin: 0;
+    margin-top: -20px;
+    font-weight: 800;
 }
