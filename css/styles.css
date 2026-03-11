@@ -49,13 +49,18 @@ nav ul {
     font-weight: bold;
 }
 
-.price h3 {
+
+.info_modelo h3 {
     margin-top: -10px;
     font-weight: 400;
     text-align: center;
 }
 
-.price h2 {
+.info_modelo h2 {
+    text-align: center;
+}
+
+.info_modelo {
     text-align: center;
 }
 
@@ -201,6 +206,16 @@ nav ul {
     margin-top: 10px;
     padding: 10px 20px;
     background-color: #4e4da1;
+    color: #ffffff;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn_comprar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #317a27;
     color: #ffffff;
     border-radius: 10px;
     text-decoration: none;
