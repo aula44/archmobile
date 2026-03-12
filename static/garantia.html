@@ -1,41 +1,62 @@
-<form>
-  <div>
-    <label for="nombre_completo">Nombre completo</label>
-    <input type="text" id="nombre_completo" name="nombre_completo" placeholder="Juan Ruiz Ruiz (p.ej.)" required>
-  </div>
-  <div>
-    <label for="">Correo-e de contacto</label>
-    <input type="email" id="" name="" placeholder="ejemplo@ejemplo.es" required>
-  </div>
-  <div>
-    <label for="_1">Número de teléfono</label>
-    <input type="number" id="_1" name="_1" placeholder="612634656 (p.ej.)" required min="9" max="9">
-  </div>
-  <div>
-    <label for="_2">Título</label>
-    <input type="text" id="_2" name="_2" placeholder="Describe brevemente tu incidencia" required>
-  </div>
-  <div>
-    <label for="_3">Descripción</label>
-    <input type="text" id="_3" name="_3" placeholder="¿Cuál es el problema? Extiéndete tanto como quieras." required>
-  </div>
-  <div>
-    <label for="_4">¿Qué dispositivo tienes?</label>
-    <select id="_4" name="_4" required>
-      <option value="option1">ArchPhone (1)</option>
-      <option value="option2">ArchPhone (1) Pro</option>
-      <option value="option3">ArchPhone Air</option>
-      <option value="option4">ArchPhone Fold</option>
-    </select>
-  </div>
-  <div>
-    <label for="imei_de_tu_dispositivo">IMEI de tu dispositivo</label>
-    <input type="text" id="imei_de_tu_dispositivo" name="imei_de_tu_dispositivo" placeholder="Introduce el IMEI de la SIM 1" required minlength="15" maxlength="15">
-  </div>
-  <div>
-    <label for="_5">Verificación</label>
-    <input type="checkbox" id="_5_0" name="_5" value="option1">
-    <label for="_5_0">Entiendo, comprendo y afirmo que todos los datos que he introducido son correctos.</label>
-  </div>
-  <button type="submit">Submit</button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AbelShop | Contacto</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./images/icono.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id="formulario-titulo">Completa el formulario:</h1>
+
+    <div class="formulario">
+        <label for="name">Nombre <span class="obligatorio">*</span></label> 
+        <input type="text" placeholder="Inserta tu nombre completo">
+        <label for="name">Correo electrónico <span class="obligatorio">*</span></label> 
+        <input type="email" placeholder="Inserta tu correo.">
+        <label for="name">Número de teléfono: <span class="obligatorio">*</span></label> 
+        <input type="tel" placeholder="Inserta tu número de teléfono.">
+        <label for="name">Título: <span class="obligatorio">*</span></label> 
+        <input type="text" placeholder="Describe brevemente tu incidencia">
+        <label for="name">Descripción <span class="obligatorio">*</span></label>
+        <input type="text" placeholder="¿Cuál es el problema? Extiendete cuanto sea necesario">
+        <label for="name">¿Qué dispositivo tienes? <span class="obligatorio">*</span></label>
+        <select name="dispositivo">
+        <option value="">-- Elige una opción --</option>
+        <option value="teclado">ArchPhone (1)</option>
+        <option value="monitor">ArchPhone (1) Pro</option>
+        <option value="impresora">ArchPhone Air</option>
+        <option value="altavoces">ArchPhone Fold</option>
+         </select>
+        <label for="name">IMEI de tu dipositivo <span class="obligatorio">*</span></label>
+        <input type="text" placeholder="imei de tu dispositivo">
+        <label for 
+
+        
+    </div>
+    <button id="enviar-form">Enviar</button>
+
+        <script>
+        document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function(e){
+        e.preventDefault();
+
+        const url = this.href;
+
+        document.body.classList.add("fade-out");
+
+        setTimeout(() => {
+            window.location = url;
+        }, 500);
+    });
+});
+</script>
+</body>
+</html>
