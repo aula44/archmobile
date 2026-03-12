@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Archmobile | Sobre nosotros">
-    <title>Sobre nosotros - Arch Mobile</title>
+    <meta name="description" content="Archmobile | Garantía">
+    <title>Garantía - Arch Mobile</title>
     <link rel="stylesheet" href="../css/formularios.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -26,7 +26,7 @@
 
         <!-- boton "inicio de sesion" (que realmente no hay na de na, esto es mas estatico que un muerto) -->
         <div class="btn_iniciosesion nav-desktop">
-            <a href="#"><i class="fa-solid fa-circle-user fa-fw"></i> Inicia Sesión</a>
+            <a href="login.html"><i class="fa-solid fa-circle-user fa-fw"></i> Inicia Sesión</a>
         </div>
     </header>
 
@@ -56,17 +56,17 @@
             <h1>Envíanos tu solicitud</h1>
         </div>
         <div class="formulario">
-            <label for="name">Nombre <span class="obligatorio">*</span></label> 
+            <label for="nombre">Nombre completo<span class="obligatorio">*</span></label> 
             <input type="text" placeholder="Juan Ruiz Ruiz (p.ej.)">
-            <label for="name">Correo-e de contacto <span class="obligatorio">*</span></label> 
+            <label for="correo">Correo-e de contacto <span class="obligatorio">*</span></label> 
             <input type="email" placeholder="ejemplo@ejemplo.es">
-            <label for="name">Número de teléfono <span class="obligatorio">*</span></label> 
-            <input type="tel" placeholder="612634656 (p.ej.)">
-            <label for="name">Título <span class="obligatorio">*</span></label> 
+            <label for="tlf">Número de teléfono <span class="obligatorio">*</span></label> 
+            <input type="number" placeholder="612634656 (p.ej.)">
+            <label for="titulo_solicitud">Título <span class="obligatorio">*</span></label> 
             <input type="text" placeholder="Describe brevemente tu incidencia.">
-            <label for="name">Descripción <span class="obligatorio">*</span></label>
+            <label for="desc_solicitud">Descripción <span class="obligatorio">*</span></label>
             <input type="text" placeholder="¿Cuál es el problema? Extiéndete cuanto sea necesario.">
-            <label for="name">¿Qué dispositivo tienes? <span class="obligatorio">*</span></label>
+            <label for="dispositivo_afectado">¿Qué dispositivo tienes? <span class="obligatorio">*</span></label>
             <select name="dispositivo">
                 <option value="">Elige un dispositivo de la lista</option>
                 <option value="archphone1">ArchPhone (1)</option>
@@ -74,12 +74,12 @@
                 <option value="archphoneair">ArchPhone Air</option>
                 <option value="archphonefold">ArchPhone Fold</option>
             </select>
-            <label for="name">IMEI de tu dipositivo <span class="obligatorio">*</span></label>
-            <input type="text" placeholder="Introduce el IMEI de la SIM 1"> 
+            <label for="imei_disp">IMEI de tu dipositivo <span class="obligatorio">*</span></label>
+            <input type="number" placeholder="Introduce el IMEI de la SIM 1"> 
         </div>
         <button id="enviar-form">Enviar</button>
     </section>
-    
+
     <footer>
         <p>2026 ArchMobile®</p>
     </footer>
