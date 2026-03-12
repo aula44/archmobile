@@ -1,62 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AbelShop | Contacto</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="./images/icono.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <meta name="description" content="Archmobile | Sobre nosotros">
+    <title>Sobre nosotros - Arch Mobile</title>
+    <link rel="stylesheet" href="../css/formularios.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-    <h1 id="formulario-titulo">Completa el formulario:</h1>
-
-    <div class="formulario">
-        <label for="name">Nombre <span class="obligatorio">*</span></label> 
-        <input type="text" placeholder="Inserta tu nombre completo">
-        <label for="name">Correo electrónico <span class="obligatorio">*</span></label> 
-        <input type="email" placeholder="Inserta tu correo.">
-        <label for="name">Número de teléfono: <span class="obligatorio">*</span></label> 
-        <input type="tel" placeholder="Inserta tu número de teléfono.">
-        <label for="name">Título: <span class="obligatorio">*</span></label> 
-        <input type="text" placeholder="Describe brevemente tu incidencia">
-        <label for="name">Descripción <span class="obligatorio">*</span></label>
-        <input type="text" placeholder="¿Cuál es el problema? Extiendete cuanto sea necesario">
-        <label for="name">¿Qué dispositivo tienes? <span class="obligatorio">*</span></label>
-        <select name="dispositivo">
-        <option value="">-- Elige una opción --</option>
-        <option value="teclado">ArchPhone (1)</option>
-        <option value="monitor">ArchPhone (1) Pro</option>
-        <option value="impresora">ArchPhone Air</option>
-        <option value="altavoces">ArchPhone Fold</option>
-         </select>
-        <label for="name">IMEI de tu dipositivo <span class="obligatorio">*</span></label>
-        <input type="text" placeholder="imei de tu dispositivo">
-        <label for 
-
+    <header>
+        <!-- logo archmobile -->
+        <div class="logo">
+            <a href="../index.html"><img src="../assets/pequeño.png" alt="Archmobile"></a>
+        </div>
         
-    </div>
-    <button id="enviar-form">Enviar</button>
+        <!-- navbar -->
+        <nav class="nav-desktop">
+            <ul>
+                <li><a href="info.html">Sobre nosotros</a></li>
+                <li><a href="#">Garantía</a></li>
+            </ul>
+        </nav>
 
-        <script>
-        document.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", function(e){
-        e.preventDefault();
+        <!-- boton "inicio de sesion" (que realmente no hay na de na, esto es mas estatico que un muerto) -->
+        <div class="btn_iniciosesion nav-desktop">
+            <a href="#"><i class="fa-solid fa-circle-user fa-fw"></i> Inicia Sesión</a>
+        </div>
+    </header>
 
-        const url = this.href;
+    <!-- banner principal -->
+    <section class="info_marquesina">
+        <!-- textos y boton de explorar -->
+        <div class="info_marquesina_textos">
+            <h1>Garantía</h1>
+            <h2>Ejerce tus derechos como consumidor.</h2>
+        </div>
+    </section>
 
-        document.body.classList.add("fade-out");
+    <section class="contenedor_historia">
+        <div class="contenedor_historia_textos">
+            <p>Sentimos profundamente que estés teniendo problemas con tu dispositivo. Recuerda que, como ciudadano de la UE, tienes derecho a 3 años de garantía y reparaciones gratuitas, siempre y cuando estén cubiertas por el <b>acuerdo de garantía</b> que aceptaste cuando configuraste por primera vez ArchMobileOS, al encender tu dispositivo.</p>
+            <br>
+            <p>Recuerda que siempre puedes volver a consultar este acuerdo desde el apartado "Garantía" dentro de "Acerca de...", que a su vez está dentro de la aplicación "Ajustes". También puedes consultar este documento con el librito físico incluido en la caja del dispositivo.</p>
+            <br>
+            <p>Para poder tramitar tu solicitud en el menor tiempo posible te pedimos que, por favor, nos comentes tu problema a través del formulario que te dejamos a continuación.</p>
+            <br>
+            <p>¡Gracias por confiar en nosotros!</p>
+        </div>
+    </section>
 
-        setTimeout(() => {
-            window.location = url;
-        }, 500);
-    });
-});
-</script>
+    <section class="form_garantía">
+        <div class="titulo_formulario">
+            <h1>Envíanos tu solicitud</h1>
+        </div>
+        <div class="formulario">
+            <label for="name">Nombre <span class="obligatorio">*</span></label> 
+            <input type="text" placeholder="Juan Ruiz Ruiz (p.ej.)">
+            <label for="name">Correo-e de contacto <span class="obligatorio">*</span></label> 
+            <input type="email" placeholder="ejemplo@ejemplo.es">
+            <label for="name">Número de teléfono <span class="obligatorio">*</span></label> 
+            <input type="tel" placeholder="612634656 (p.ej.)">
+            <label for="name">Título <span class="obligatorio">*</span></label> 
+            <input type="text" placeholder="Describe brevemente tu incidencia.">
+            <label for="name">Descripción <span class="obligatorio">*</span></label>
+            <input type="text" placeholder="¿Cuál es el problema? Extiéndete cuanto sea necesario.">
+            <label for="name">¿Qué dispositivo tienes? <span class="obligatorio">*</span></label>
+            <select name="dispositivo">
+                <option value="">Elige un dispositivo de la lista</option>
+                <option value="archphone1">ArchPhone (1)</option>
+                <option value="archphone1pro">ArchPhone (1) Pro</option>
+                <option value="archphoneair">ArchPhone Air</option>
+                <option value="archphonefold">ArchPhone Fold</option>
+            </select>
+            <label for="name">IMEI de tu dipositivo <span class="obligatorio">*</span></label>
+            <input type="text" placeholder="Introduce el IMEI de la SIM 1"> 
+        </div>
+        <button id="enviar-form">Enviar</button>
+    </section>
+    
+    <footer>
+        <p>2026 ArchMobile®</p>
+    </footer>
 </body>
 </html>

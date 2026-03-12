@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../assets/satoshi.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Satoshi';
+}
+
+input, button, textarea, select {
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+label {
+    font-weight: 600;
+}
+
+button {
+    font-size: 15px;
+}
+
+.formulario {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    color: rgb(34, 34, 34);
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    width: 90%;
+    max-width: 400px;
+    padding: 30px;
+    height: 580px;
+    border-radius: 20px;
+    line-height: 35px;
+}
+
+.formulario label {
+    margin-top: 10px;
+}
+
+.formulario input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1.5px solid rgb(0, 0, 0);
+    height: 35px;
+    background-color: #0000000c;
+    border-radius: 3px;
+    color: rgb(0, 0, 0);
+    padding-left: 10px;
+}
+
+
+#enviar-form {
+    padding: 10px 30px;
+    margin-top: 20px;
+    align-self: center;
+    background-color: #317a27;
+    border-radius: 10px;
+    color: #ffffff;
+    border: 0px solid #0000004d;
+}
+
+.obligatorio {
+    color: red;
+}
